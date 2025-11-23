@@ -7,7 +7,7 @@ CFLAGSS = -O2 -g
 ASFLAGS = -O2 -g
 LDFLAGS = -Tmarkos.lds
 
-OBJS = start.o init.o boot.o abnormal.o
+OBJS = start.o init.o boot.o abnormal.o mmu.o
 
 .c.o:
 	$(CC) $(CFLAGSS) -c $<
